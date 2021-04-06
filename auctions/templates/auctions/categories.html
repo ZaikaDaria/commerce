@@ -1,0 +1,15 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Categories</h2>
+
+
+
+    <select>
+        {% for i in listings %}
+        <option>{{ i.category_name }}</option>
+        {% endfor %}
+    </select>
+
+</form>
+{% endblock %}
